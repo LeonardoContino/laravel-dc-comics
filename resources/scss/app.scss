@@ -1,6 +1,9 @@
 @import "header";
 @import "main";
 @import "footer";
+@import "show";
+
+@import "~bootstrap/scss/bootstrap";
 
 body {
     margin: 0;
