@@ -1,6 +1,4 @@
-@php
-$comics = config('comics')
-@endphp
+
 
 @extends('layout.main')
 
