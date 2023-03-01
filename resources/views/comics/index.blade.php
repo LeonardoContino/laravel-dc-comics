@@ -16,9 +16,16 @@
               
         @endforeach
     </div>
-    <div class="btn-more">
-        load more
+
+    <div class="d-flex gap-3">
+        <div>
+            <a class="btn btn-primary" href="{{route('comics.create')}}">Crea comic</a>
+        </div>
+        <div class="btn btn-primary">
+            load more
+        </div>
     </div>
+    
     
     
 </div>
