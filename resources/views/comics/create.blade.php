@@ -48,7 +48,7 @@
         </div>
         <div class="col-6">
             <div class="mb-3">
-                <label for="artists" class="form-label">Descrizione</label>
+                <label for="description" class="form-label">Descrizione</label>
                 <textarea name="description" id="description" cols="30" class="form-control"></textarea>
             </div>
               

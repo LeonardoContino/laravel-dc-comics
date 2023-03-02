@@ -1,7 +1,8 @@
 @extends('layout.main')
 
 @section('main-content')
-<form action="{{ route('comics.store')}}" method="POST" novalidate>
+<form action="{{ route('comics.update', $comic->id)}}" method="POST" novalidate>
+    @method('PUT')
     @csrf
     <div class="row mt-3">
         <div class="col-6">
@@ -52,7 +53,7 @@
         </div>
         <div class="col-6">
             <div class="mb-3">
-                <label for="artists" class="form-label">Descrizione</label>
+                <label for="description" class="form-label">Descrizione</label>
                 <textarea name="description" id="description" cols="30" class="form-control" value="{{old('description', $comic->description)}}"></textarea>
             </div>
               
