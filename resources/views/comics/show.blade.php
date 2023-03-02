@@ -38,7 +38,7 @@
 
 
     <div class="m-2 text-center">
-        <a href="{{route('comics.edit', $comic->id)}}" class="btn btn-warning">Modifica</a>
+        <a href="{{route('comics.edit', $comic)}}" class="btn btn-warning">Modifica</a>
     </div>
 </div>
 

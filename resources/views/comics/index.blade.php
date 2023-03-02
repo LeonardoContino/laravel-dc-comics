@@ -19,7 +19,7 @@
 
     <div class="d-flex gap-3">
         <div>
-            <a class="btn btn-primary" href="{{route('comics.create')}}">Crea comic</a>
+            <a class="btn btn-primary" href="{{route('comics.create', $comic)}}">Crea comic</a>
         </div>
         <div class="btn btn-primary">
             load more
