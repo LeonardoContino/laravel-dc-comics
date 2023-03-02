@@ -54,21 +54,21 @@
         <div class="col-6">
             <div class="mb-3">
                 <label for="description" class="form-label">Descrizione</label>
-                <textarea name="description" id="description" cols="30" class="form-control" value="{{old('description', $comic->description)}}"></textarea>
+                <textarea name="description" id="description" cols="30" class="form-control">{{old('description', $comic->description)}}</textarea>
             </div>
               
         </div>
         <div class="col-6">
             <div class="mb-3">
                 <label for="artists" class="form-label">Artists</label>
-                <textarea name="artists" id="artists" cols="30" class="form-control" value="{{old('artists', $comic->artists)}}"></textarea>
+                <textarea name="artists" id="artists" cols="30" class="form-control">{{old('artists', $comic->artists)}}</textarea>
             </div>
               
         </div>
         <div class="col-6">
             <div class="mb-3">
                 <label for="writers" class="form-label">Writers</label>
-                <textarea name="writers" id="writers" cols="30" class="form-control" value="{{old('writers', $comic->writers)}}"></textarea>
+                <textarea name="writers" id="writers" cols="30" class="form-control" >{{old('writers', $comic->writers)}}</textarea>
             </div>
               
         </div>

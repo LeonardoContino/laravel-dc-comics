@@ -55,7 +55,7 @@ class ComicController extends Controller
     public function show(string $id)
     {
         $comic = Comic::findOrFail($id);
-
+        
         return view('comics.show', compact('comic'));
         
     }
@@ -79,7 +79,7 @@ class ComicController extends Controller
         $comic->update($data);
         $comic->save();
 
-        return ro_route('comics.show', $comic->id);
+        return to_route('comics.show', $comic->id);
     }
 
     /**
