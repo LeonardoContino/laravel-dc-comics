@@ -3,6 +3,12 @@
 @extends('layout.main')
 
 @section('main-content')
+
+@if(session('delete'))
+ <div class="alert alert-success mt-2">
+    {{session('delete')}}
+ </div>
+@endif
 <div class="content">
     <div class="btn-series">Current series</div>
     <div  class="cards-comics">
