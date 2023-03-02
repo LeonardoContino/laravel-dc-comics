@@ -11,37 +11,34 @@
             <h5>{{$comic->description}}</h5>
         </div>
         <hr>
-        <h3 class="mt">Infos</h3>
-        <div class="d-flex">
-            <div class="w-40 mx">
-                <div class="mt text-center">
+        <h3 class="mt">Info</h3>
+        <div class="d-flex justify-content-between">
+                        <div>
+                            <h4>Artists:</h4>
+                            <i>{{$comic->artists}}</i>
+                        </div>
+                        <div>
+                            <h4>Writers:</h4>
+                            <i>{{$comic->writers}}</i>
+                        </div>
                     <div>
-                        <h4>Artists:</h4>
-                        <i>{{$comic->artists}}</i>
+                            <h4>Type:</h4>
+                            <i>{{$comic->type}}</i>
                     </div>
-                    <div class="mt">
-                        <h4>Writers:</h4>
-                        <i>{{$comic->writers}}</i>
-                    </div>
+                <div class="mt">
+                            <h4>Price:</h4>
+                            <i>${{$comic->price}}</i>
                 </div>
-            </div>
-            <div class="w-40 mx">
-                <div class="mt text-center ">
-                    <div>
-                        <h4>Type:</h4>
-                        <i>{{$comic->type}}</i>
-                    </div>
-                    <div class="mt">
-                        <h4>Price:</h4>
-                        <i>${{$comic->price}}</i>
-                    </div>
-                    <div class="mt">
-                        <h4>Sale Date:</h4>
-                        <i>${{$comic->sale_date}}</i>
-                    </div>
+                <div class="mt">
+                            <h4>Sale Date:</h4>
+                            <i>${{$comic->sale_date}}</i>
                 </div>
-            </div>
         </div>
+    </div>
+
+
+    <div class="m-2 text-center">
+        <a href="{{route('comics.edit', $comic->id)}}" class="btn btn-warning">Modifica</a>
     </div>
 </div>
 
